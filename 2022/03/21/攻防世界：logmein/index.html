@@ -1,0 +1,170 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>攻防世界：logmein | Blog of br0keh</title><meta name="keywords" content="Reverse,攻防世界"><meta name="author" content="br0keh"><meta name="copyright" content="br0keh"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="一道简单的re题">
+<meta property="og:type" content="article">
+<meta property="og:title" content="攻防世界：logmein">
+<meta property="og:url" content="https://duheru.github.io/2022/03/21/%E6%94%BB%E9%98%B2%E4%B8%96%E7%95%8C%EF%BC%9Alogmein/index.html">
+<meta property="og:site_name" content="Blog of br0keh">
+<meta property="og:description" content="一道简单的re题">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://duheru.github.io/img/3.png">
+<meta property="article:published_time" content="2022-03-21T15:50:24.000Z">
+<meta property="article:modified_time" content="2022-05-08T09:56:23.144Z">
+<meta property="article:author" content="br0keh">
+<meta property="article:tag" content="Reverse">
+<meta property="article:tag" content="攻防世界">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://duheru.github.io/img/3.png"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="https://duheru.github.io/2022/03/21/%E6%94%BB%E9%98%B2%E4%B8%96%E7%95%8C%EF%BC%9Alogmein/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '攻防世界：logmein',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2022-05-08 17:56:23'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.2"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/head1.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">17</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">12</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/3.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Blog of br0keh</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">攻防世界：logmein</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-03-21T15:50:24.000Z" title="发表于 2022-03-21 23:50:24">2022-03-21</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-05-08T09:56:23.144Z" title="更新于 2022-05-08 17:56:23">2022-05-08</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/CTF/">CTF</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="攻防世界：logmein"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>先拖到exeinfope看看</p>
+<p>64位没壳</p>
+<p><img src="%E6%94%BB%E9%98%B2%E4%B8%96%E7%95%8C%EF%BC%9Alogmein/1.jpg" alt="1"></p>
+<p>拖进IDA，找到main函数</p>
+<p><strong>F5大法好啊！！！</strong></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">void</span> __fastcall __noreturn <span class="title function_">main</span><span class="params">(<span class="type">int</span> a1, <span class="type">char</span> **a2, <span class="type">char</span> **a3)</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="type">size_t</span> v3; <span class="comment">// rsi</span></span><br><span class="line">  <span class="type">int</span> i; <span class="comment">// [rsp+3Ch] [rbp-54h]</span></span><br><span class="line">  <span class="type">char</span> s[<span class="number">36</span>]; <span class="comment">// [rsp+40h] [rbp-50h] BYREF</span></span><br><span class="line">  <span class="type">int</span> v6; <span class="comment">// [rsp+64h] [rbp-2Ch]</span></span><br><span class="line">  __int64 v7; <span class="comment">// [rsp+68h] [rbp-28h]</span></span><br><span class="line">  <span class="type">char</span> v8[<span class="number">28</span>]; <span class="comment">// [rsp+70h] [rbp-20h] BYREF</span></span><br><span class="line">  <span class="type">int</span> v9; <span class="comment">// [rsp+8Ch] [rbp-4h]</span></span><br><span class="line"></span><br><span class="line">  v9 = <span class="number">0</span>;</span><br><span class="line">  <span class="built_in">strcpy</span>(v8, <span class="string">&quot;:\&quot;AL_RT^L*.?+6/46&quot;</span>);</span><br><span class="line">  v7 = <span class="number">0x65626D61726168</span>LL;</span><br><span class="line">  v6 = <span class="number">7</span>;</span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">&quot;Welcome to the RC3 secure password guesser.\n&quot;</span>);</span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">&quot;To continue, you must enter the correct password.\n&quot;</span>);</span><br><span class="line">  <span class="built_in">printf</span>(<span class="string">&quot;Enter your guess: &quot;</span>);</span><br><span class="line">  __isoc99_scanf(<span class="string">&quot;%32s&quot;</span>, s);</span><br><span class="line">  v3 = <span class="built_in">strlen</span>(s);</span><br><span class="line">  <span class="keyword">if</span> ( v3 &lt; <span class="built_in">strlen</span>(v8) )</span><br><span class="line">    sub_4007C0();</span><br><span class="line">  <span class="keyword">for</span> ( i = <span class="number">0</span>; i &lt; <span class="built_in">strlen</span>(s); ++i )</span><br><span class="line">  &#123;</span><br><span class="line">    <span class="keyword">if</span> ( i &gt;= <span class="built_in">strlen</span>(v8) )</span><br><span class="line">      sub_4007C0();</span><br><span class="line">    <span class="keyword">if</span> ( s[i] != (<span class="type">char</span>)(*((_BYTE *)&amp;v7 + i % v6) ^ v8[i]) )</span><br><span class="line">      sub_4007C0();</span><br><span class="line">  &#125;</span><br><span class="line">  sub_4007F0();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>其中可以发现</p>
+<p>s是我们输入的flag字符串，而flag就等于v7[i%7]^v8[i]</p>
+<p><strong>看看看看</strong></p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">v7 = <span class="number">0x65626D61726168</span>LL;</span><br></pre></td></tr></table></figure>
+
+<p>(_BYTE *)&amp;v7表示将原本是_int64类型的v7转换地址形式，转成byte型地址形式来实现1位一位读取。</p>
+<p>这里还要注意的是这里的内存是小端存放的，需要逆着来查看v7的字符串</p>
+<p>我们按一下R</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">v7 = <span class="string">&#x27;ebmarah&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
+<p>倒过来</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">v7 = <span class="string">&#x27;harambe&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
+<p>上python脚本</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">key1=<span class="string">&#x27;ebmarah&#x27;</span></span><br><span class="line">key=<span class="string">&#x27;harambe&#x27;</span></span><br><span class="line">s=<span class="string">&#x27;:\&quot;AL_RT^L*.?+6/46&#x27;</span></span><br><span class="line">flag=<span class="string">&#x27;&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="built_in">len</span>(s)):</span><br><span class="line">    flag+=<span class="built_in">chr</span>((<span class="built_in">ord</span>(key[i%<span class="number">7</span>]))^<span class="built_in">ord</span>(s[i]))</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(flag)</span><br></pre></td></tr></table></figure>
+
+<p><img src="./%E6%94%BB%E9%98%B2%E4%B8%96%E7%95%8C%EF%BC%9Alogmein/2.jpg" alt="2"></p>
+</article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Reverse/">Reverse</a><a class="post-meta__tags" href="/tags/%E6%94%BB%E9%98%B2%E4%B8%96%E7%95%8C/">攻防世界</a></div><div class="post_share"><div class="social-share" data-image="/img/3.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/gh/overtrue/share.js@master/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/03/27/%E6%94%BB%E9%98%B2%E4%B8%96%E7%95%8C%EF%BC%9Ano-strings-attached/"><img class="prev-cover" src="/img/3.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">攻防世界：no-strings-attached</div></div></a></div><div class="next-post pull-right"><a href="/2022/03/21/ACM%E6%9D%BF%E5%AD%90/"><img class="next-cover" src="/img/3.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">ACM板子</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/head1.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">br0keh</div><div class="author-info__description">身前任黑暗汹涌，身后万物自在生长</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">17</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">12</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/duheru"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">送君千里，终须一别</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/05/15/Codeforces-Round-791-Div-2-%E9%A2%98%E8%A7%A3/" title="Codeforces Round #791 (Div.2)题解">Codeforces Round #791 (Div.2)题解</a><time datetime="2022-05-14T16:23:27.000Z" title="发表于 2022-05-15 00:23:27">2022-05-15</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/05/08/Markdown%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95/" title="Markdown常用语法">Markdown常用语法</a><time datetime="2022-05-08T11:45:10.000Z" title="发表于 2022-05-08 19:45:10">2022-05-08</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/05/08/2022%E7%89%9B%E5%AE%A2%E4%BA%94%E4%B8%80%E9%9B%86%E8%AE%AD%E6%B4%BE%E5%AF%B9day2%E9%A2%98%E8%A7%A3/" title="2022牛客五一集训派对day2题解">2022牛客五一集训派对day2题解</a><time datetime="2022-05-08T02:38:06.000Z" title="发表于 2022-05-08 10:38:06">2022-05-08</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/05/07/ACMer%E7%9A%84%E5%A4%B4%E6%96%87%E4%BB%B6/" title="ACMer的头文件">ACMer的头文件</a><time datetime="2022-05-07T15:49:51.000Z" title="发表于 2022-05-07 23:49:51">2022-05-07</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/04/15/BUUCTF%EF%BC%9A-2019%E7%BA%A2%E5%B8%BD%E6%9D%AF-easyRE/" title="BUUCTF：[2019红帽杯]easyRE">BUUCTF：[2019红帽杯]easyRE</a><time datetime="2022-04-15T15:40:39.000Z" title="发表于 2022-04-15 23:40:39">2022-04-15</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By br0keh</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
